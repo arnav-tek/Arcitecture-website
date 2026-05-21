@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TaskGo - Project management, reimagined. The fastest way to ship your team's work." />
+  <title>TaskGo — Project management, reimagined</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Page loader -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <!-- Announcement bar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span class="topbar-pill">NEW</span>
+      <span class="topbar-text">TaskGo AI assistant is now in public beta.</span>
+      <a href="#" class="topbar-link">Read the announcement <span class="arr">&rarr;</span></a>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">
+        <span class="brand-mark">
+          <svg viewBox="0 0 32 32" width="22" height="22" aria-hidden="true">
+            <path d="M6 16 L13 23 L26 9" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand-name">TaskGo</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#features">Product</a>
+        <a href="#workflow">Solutions</a>
+        <a href="#integrations">Integrations</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">Resources</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="#" class="btn btn-ghost">Sign in</a>
+        <a href="#" class="btn btn-primary">Get started <span class="arr">&rarr;</span></a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-grid"></div>
+
+    <div class="container hero-inner">
+      <div class="hero-badge reveal" data-delay="0">
+        <span class="dot"></span> Trusted by 12,000+ teams worldwide
+      </div>
+
+      <h1 class="hero-title reveal" data-delay="100">
+        The fastest way to ship
+        <span class="serif">your team's</span>
+        <span class="grad">best work.</span>
+      </h1>
+
+      <p class="hero-sub reveal" data-delay="200">
+        TaskGo is the all-in-one workspace where modern teams plan, track and
+        launch projects without the chaos. Beautifully simple. Seriously fast.
+      </p>
+
+      <div class="hero-cta reveal" data-delay="300">
+        <a href="#" class="btn btn-primary btn-lg">Start free trial <span class="arr">&rarr;</span></a>
+        <a href="#" class="btn btn-outline btn-lg">
+          <span class="play-ico" aria-hidden="true"></span>
+          Watch demo
+        </a>
+      </div>
+
+      <p class="hero-meta reveal" data-delay="400">
+        Free 14-day trial &middot; No credit card required
+      </p>
+
+      <!-- Dashboard mockup -->
+      <div class="mock reveal" data-delay="500">
+        <div class="mock-shell">
+          <div class="mock-bar">
+            <span class="dotc red"></span>
+            <span class="dotc yellow"></span>
+            <span class="dotc green"></span>
+            <span class="mock-url">app.taskgo.com / sprint-22</span>
+          </div>
+          <div class="mock-body">
+            <aside class="mock-side">
+              <div class="mock-side-brand">
+                <span class="brand-mark sm">
+                  <svg viewBox="0 0 32 32" width="14" height="14"><path d="M6 16 L13 23 L26 9" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span>Acme Inc.</span>
+              </div>
+              <ul class="mock-nav">
+                <li class="active"><i class="ic ic-home"></i>Dashboard</li>
+                <li><i class="ic ic-task"></i>Tasks</li>
+                <li><i class="ic ic-cal"></i>Calendar</li>
+                <li><i class="ic ic-team"></i>Team</li>
+                <li><i class="ic ic-doc"></i>Docs</li>
+                <li><i class="ic ic-set"></i>Settings</li>
+              </ul>
+              <div class="mock-card">
+                <p>Pro plan</p>
+                <div class="mock-progress"><span style="width:72%"></span></div>
+                <small>72% of monthly tasks used</small>
+              </div>
+            </aside>
+
+            <main class="mock-main">
+              <div class="mock-head">
+                <div>
+                  <h4>Sprint 22 — Q3 launch</h4>
+                  <p>14 in progress &middot; 6 completed today</p>
+                </div>
+                <div class="mock-avatars">
+                  <span class="av av1">RM</span>
+                  <span class="av av2">JK</span>
+                  <span class="av av3">AS</span>
+                  <span class="av av4">+5</span>
+                </div>
+              </div>
+
+              <div class="mock-stats">
+                <div class="stat">
+                  <span class="stat-label">Velocity</span>
+                  <span class="stat-num">89<small>%</small></span>
+                  <span class="stat-trend up">&uarr; 12.4%</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">On track</span>
+                  <span class="stat-num">42<small>/48</small></span>
+                  <span class="stat-trend up">&uarr; 3.1%</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Cycle time</span>
+                  <span class="stat-num">3.4<small>d</small></span>
+                  <span class="stat-trend down">&darr; 0.8d</span>
+                </div>
+              </div>
+
+              <div class="mock-board">
+                <div class="col">
+                  <div class="col-head"><span class="d todo"></span>To do <small>4</small></div>
+                  <div class="ti"><b>Design auth flow</b><span class="tag t1">Design</span></div>
+                  <div class="ti"><b>Audit billing edge cases</b><span class="tag t2">Backend</span></div>
+                  <div class="ti"><b>Refactor onboarding</b><span class="tag t3">Web</span></div>
+                </div>
+                <div class="col">
+                  <div class="col-head"><span class="d prog"></span>In progress <small>3</small></div>
+                  <div class="ti hl"><b>Migrate to v3 API</b><span class="tag t2">Backend</span></div>
+                  <div class="ti"><b>Empty states</b><span class="tag t1">Design</span></div>
+                  <div class="ti"><b>Mobile push notifs</b><span class="tag t4">Mobile</span></div>
+                </div>
+                <div class="col">
+                  <div class="col-head"><span class="d done"></span>Done <small>6</small></div>
+                  <div class="ti"><b>Launch dark mode</b><span class="tag t3">Web</span></div>
+                  <div class="ti"><b>SOC 2 prep docs</b><span class="tag t5">Ops</span></div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+
+        <!-- Floating cards around the mock -->
+        <div class="float fl1">
+          <span class="ico-circle"><i class="ic ic-bell"></i></span>
+          <div>
+            <b>+12 tasks shipped</b>
+            <small>this week</small>
+          </div>
+        </div>
+        <div class="float fl2">
+          <span class="ico-circle violet"><i class="ic ic-spark"></i></span>
+          <div>
+            <b>AI summary ready</b>
+            <small>Sprint 22 retro</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST / LOGOS marquee -->
+  <section class="trust">
+    <p class="trust-label">Powering modern teams at</p>
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>NORTHWIND</span>
+        <span>STELLAR</span>
+        <span>QUANTUMIO</span>
+        <span>NIMBUS</span>
+        <span>HELIX</span>
+        <span>ATLAS LABS</span>
+        <span>OBSIDIAN</span>
+        <span>VOLTA</span>
+        <span>NORTHWIND</span>
+        <span>STELLAR</span>
+        <span>QUANTUMIO</span>
+        <span>NIMBUS</span>
+        <span>HELIX</span>
+        <span>ATLAS LABS</span>
+        <span>OBSIDIAN</span>
+        <span>VOLTA</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow reveal">Features</span>
+        <h2 class="reveal" data-delay="100">Everything your team needs.<br/><span class="muted">Nothing they don't.</span></h2>
+        <p class="reveal" data-delay="200">From standups to ship, TaskGo brings every part of your workflow into one elegant workspace.</p>
+      </div>
+
+      <div class="feat-grid">
+        <article class="feat reveal">
+          <span class="feat-ico"><i class="ic ic-bolt"></i></span>
+          <h3>Lightning planning</h3>
+          <p>Drag-and-drop sprints, instant filters, and real-time updates so plans never go stale.</p>
+        </article>
+        <article class="feat reveal" data-delay="80">
+          <span class="feat-ico"><i class="ic ic-spark"></i></span>
+          <h3>AI summaries</h3>
+          <p>Auto-generated standups, retros and project recaps. Stay informed without the meetings.</p>
+        </article>
+        <article class="feat reveal" data-delay="160">
+          <span class="feat-ico"><i class="ic ic-task"></i></span>
+          <h3>Smart tasks</h3>
+          <p>Sub-tasks, dependencies, custom fields and templates that adapt to your team's process.</p>
+        </article>
+        <article class="feat reveal" data-delay="240">
+          <span class="feat-ico"><i class="ic ic-team"></i></span>
+          <h3>Built for collaboration</h3>
+          <p>Mentions, threads, video clips and shared docs &mdash; all alongside the work itself.</p>
+        </article>
+        <article class="feat reveal" data-delay="320">
+          <span class="feat-ico"><i class="ic ic-shield"></i></span>
+          <h3>Enterprise security</h3>
+          <p>SOC 2 Type II, SSO, SCIM and granular permissions. Trusted by security-first orgs.</p>
+        </article>
+        <article class="feat reveal" data-delay="400">
+          <span class="feat-ico"><i class="ic ic-bolt2"></i></span>
+          <h3>Blazing fast</h3>
+          <p>Sub-50ms interactions, offline-first, and a keyboard-first UI built for power users.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKFLOW (alternating big features) -->
+  <section class="workflow section" id="workflow">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow reveal">How it works</span>
+        <h2 class="reveal" data-delay="100">From idea to ship,<br/>in three quiet steps.</h2>
+      </div>
+
+      <div class="step reveal">
+        <div class="step-text">
+          <span class="step-num">01</span>
+          <h3>Capture every idea — instantly.</h3>
+          <p>Spin up a project in seconds. Import from Jira, Trello or Asana with one click. TaskGo organises it for you so nothing slips.</p>
+          <ul class="check">
+            <li>One-click migration from 14 tools</li>
+            <li>Instant templates for every team</li>
+            <li>Voice and clip capture on mobile</li>
+          </ul>
+        </div>
+        <div class="step-vis">
+          <div class="vis vis-1">
+            <div class="capture-card c1"><span></span> Refactor checkout</div>
+            <div class="capture-card c2"><span></span> Add Stripe webhook</div>
+            <div class="capture-card c3"><span></span> Audit empty states</div>
+            <div class="capture-card c4"><span></span> Design Q3 banner</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="step reverse reveal">
+        <div class="step-text">
+          <span class="step-num">02</span>
+          <h3>Plan with clarity, not chaos.</h3>
+          <p>Drag-and-drop sprints, dependencies and timelines. Spot bottlenecks before they happen with smart workload views.</p>
+          <ul class="check">
+            <li>Gantt, board and calendar in one view</li>
+            <li>Workload balancing across your team</li>
+            <li>Dependencies that update automatically</li>
+          </ul>
+        </div>
+        <div class="step-vis">
+          <div class="vis vis-2">
+            <div class="row r1"><b>Design</b><span class="bar b1"></span></div>
+            <div class="row r2"><b>Backend</b><span class="bar b2"></span></div>
+            <div class="row r3"><b>Web</b><span class="bar b3"></span></div>
+            <div class="row r4"><b>Mobile</b><span class="bar b4"></span></div>
+            <div class="row r5"><b>QA</b><span class="bar b5"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="step reveal">
+        <div class="step-text">
+          <span class="step-num">03</span>
+          <h3>Ship faster — and know why.</h3>
+          <p>Auto-generated reports, velocity tracking and AI retros so every team learns and improves cycle after cycle.</p>
+          <ul class="check">
+            <li>AI weekly recap to every stakeholder</li>
+            <li>Cycle-time analytics out of the box</li>
+            <li>Custom dashboards in minutes</li>
+          </ul>
+        </div>
+        <div class="step-vis">
+          <div class="vis vis-3">
+            <div class="ring">
+              <svg viewBox="0 0 120 120" width="180" height="180">
+                <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="10"/>
+                <circle class="ring-fill" cx="60" cy="60" r="50" fill="none" stroke="url(#g)" stroke-width="10" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="11" transform="rotate(-90 60 60)"/>
+                <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#c4ff3d"/><stop offset="1" stop-color="#7c5cff"/></linearGradient></defs>
+              </svg>
+              <div class="ring-num"><b>89%</b><small>Velocity</small></div>
+            </div>
+            <div class="kpi"><b>+12.4%</b><small>vs last sprint</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTEGRATIONS -->
+  <section class="integrations section" id="integrations">
+    <div class="container int-inner">
+      <div class="int-text">
+        <span class="eyebrow reveal">Integrations</span>
+        <h2 class="reveal" data-delay="100">Plays nicely with the rest of your stack.</h2>
+        <p class="reveal" data-delay="200">Connect TaskGo to the 80+ tools your team already loves. Two-way sync, real-time updates and zero engineering effort.</p>
+        <a href="#" class="btn btn-outline reveal" data-delay="300">Browse all integrations <span class="arr">&rarr;</span></a>
+      </div>
+      <div class="int-grid reveal" data-delay="200">
+        <div class="orbit">
+          <span class="orb-center">
+            <span class="brand-mark">
+              <svg viewBox="0 0 32 32" width="22" height="22"><path d="M6 16 L13 23 L26 9" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </span>
+          <span class="orb-ring r1"></span>
+          <span class="orb-ring r2"></span>
+          <span class="orb-ring r3"></span>
+
+          <span class="orb-icon o1" title="Slack">SL</span>
+          <span class="orb-icon o2" title="Figma">FG</span>
+          <span class="orb-icon o3" title="GitHub">GH</span>
+          <span class="orb-icon o4" title="Notion">NT</span>
+          <span class="orb-icon o5" title="Linear">LN</span>
+          <span class="orb-icon o6" title="Zoom">ZM</span>
+          <span class="orb-icon o7" title="Google">GO</span>
+          <span class="orb-icon o8" title="Stripe">ST</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testi section" id="testi">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow reveal">Loved by teams</span>
+        <h2 class="reveal" data-delay="100">A workspace teams<br/>actually look forward to.</h2>
+      </div>
+    </div>
+
+    <div class="testi-marquee">
+      <div class="testi-track">
+        <figure class="quote">
+          <blockquote>"We replaced three tools with TaskGo and shipped 30% faster the first quarter. The AI recaps alone are worth it."</blockquote>
+          <figcaption>
+            <span class="av av1">RM</span>
+            <div><b>Riya Mehta</b><small>Head of Engineering, Stellar</small></div>
+          </figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>"It feels like the team finally has a single source of truth. Onboarding new hires went from a week to one afternoon."</blockquote>
+          <figcaption>
+            <span class="av av2">JK</span>
+            <div><b>Jordan Kim</b><small>VP Product, Northwind</small></div>
+          </figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>"The keyboard shortcuts alone earned the price tag. Our PMs run their entire week without lifting the mouse."</blockquote>
+          <figcaption>
+            <span class="av av3">AS</span>
+            <div><b>Ana Soto</b><small>Sr. PM, Quantumio</small></div>
+          </figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>"Finally, a project tool that doesn't fight you. Beautiful, fast and our designers stopped complaining the day we switched."</blockquote>
+          <figcaption>
+            <span class="av av4">DH</span>
+            <div><b>David Huang</b><small>CTO, Helix</small></div>
+          </figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>"TaskGo turned standups from a chore into a 5-minute glance. The AI summary is uncannily accurate."</blockquote>
+          <figcaption>
+            <span class="av av5">LP</span>
+            <div><b>Lina Park</b><small>Eng Manager, Atlas Labs</small></div>
+          </figcaption>
+        </figure>
+
+        <!-- duplicate for seamless marquee -->
+        <figure class="quote">
+          <blockquote>"We replaced three tools with TaskGo and shipped 30% faster the first quarter. The AI recaps alone are worth it."</blockquote>
+          <figcaption>
+            <span class="av av1">RM</span>
+            <div><b>Riya Mehta</b><small>Head of Engineering, Stellar</small></div>
+          </figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>"It feels like the team finally has a single source of truth. Onboarding new hires went from a week to one afternoon."</blockquote>
+          <figcaption>
+            <span class="av av2">JK</span>
+            <div><b>Jordan Kim</b><small>VP Product, Northwind</small></div>
+          </figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>"The keyboard shortcuts alone earned the price tag. Our PMs run their entire week without lifting the mouse."</blockquote>
+          <figcaption>
+            <span class="av av3">AS</span>
+            <div><b>Ana Soto</b><small>Sr. PM, Quantumio</small></div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing section" id="pricing">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow reveal">Pricing</span>
+        <h2 class="reveal" data-delay="100">Simple pricing.<br/>Scales with your team.</h2>
+        <p class="reveal" data-delay="200">Start free. Upgrade when you're ready. Cancel anytime — really.</p>
+
+        <div class="toggle reveal" data-delay="300">
+          <button class="t-opt active" data-billing="monthly">Monthly</button>
+          <button class="t-opt" data-billing="yearly">Yearly <span class="save">save 20%</span></button>
+        </div>
+      </div>
+
+      <div class="plans">
+        <article class="plan reveal">
+          <h3>Starter</h3>
+          <p class="plan-desc">For small teams getting organised.</p>
+          <div class="price"><span class="cur">$</span><span class="num" data-monthly="0" data-yearly="0">0</span><span class="per">/user / mo</span></div>
+          <a href="#" class="btn btn-outline btn-block">Start for free</a>
+          <ul class="plan-feat">
+            <li>Up to 10 members</li>
+            <li>Unlimited tasks &amp; projects</li>
+            <li>Board, list and calendar views</li>
+            <li>Community support</li>
+          </ul>
+        </article>
+
+        <article class="plan featured reveal" data-delay="100">
+          <span class="ribbon">Most popular</span>
+          <h3>Pro</h3>
+          <p class="plan-desc">For growing teams that ship.</p>
+          <div class="price"><span class="cur">$</span><span class="num" data-monthly="12" data-yearly="9">12</span><span class="per">/user / mo</span></div>
+          <a href="#" class="btn btn-primary btn-block">Start 14-day trial</a>
+          <ul class="plan-feat">
+            <li>Everything in Starter</li>
+            <li>AI summaries &amp; smart filters</li>
+            <li>Gantt &amp; workload views</li>
+            <li>Custom fields &amp; automations</li>
+            <li>Priority support</li>
+          </ul>
+        </article>
+
+        <article class="plan reveal" data-delay="200">
+          <h3>Enterprise</h3>
+          <p class="plan-desc">For organisations that need control.</p>
+          <div class="price"><span class="cur">$</span><span class="num" data-monthly="29" data-yearly="23">29</span><span class="per">/user / mo</span></div>
+          <a href="#" class="btn btn-outline btn-block">Contact sales</a>
+          <ul class="plan-feat">
+            <li>Everything in Pro</li>
+            <li>SSO, SCIM, audit logs</li>
+            <li>Custom data residency</li>
+            <li>Dedicated success manager</li>
+            <li>99.99% uptime SLA</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq section" id="faq">
+    <div class="container faq-inner">
+      <div class="faq-head">
+        <span class="eyebrow reveal">FAQ</span>
+        <h2 class="reveal" data-delay="100">Frequently asked questions.</h2>
+        <p class="reveal" data-delay="200">Can't find an answer? Reach our team at <a href="#">hello@taskgo.io</a>.</p>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item reveal">
+          <summary>How is TaskGo different from Jira or Asana?<span class="plus"></span></summary>
+          <div class="faq-body"><p>TaskGo is built keyboard-first and offline-first. We focus on speed, beautiful defaults and AI-driven summaries — instead of bolting on features for every edge case.</p></div>
+        </details>
+        <details class="faq-item reveal" data-delay="80">
+          <summary>Do you offer a free plan?<span class="plus"></span></summary>
+          <div class="faq-body"><p>Yes. Our Starter plan is free forever for teams up to 10 people, with unlimited tasks and projects.</p></div>
+        </details>
+        <details class="faq-item reveal" data-delay="160">
+          <summary>Can I migrate from another tool?<span class="plus"></span></summary>
+          <div class="faq-body"><p>One-click importers are available for Jira, Trello, Asana, Linear, Notion and 9 more. Your structure, comments and history come along for the ride.</p></div>
+        </details>
+        <details class="faq-item reveal" data-delay="240">
+          <summary>Is my data secure?<span class="plus"></span></summary>
+          <div class="faq-body"><p>TaskGo is SOC 2 Type II certified, encrypts data in transit and at rest, and offers SSO/SCIM on all paid tiers. Custom data residency is available on Enterprise.</p></div>
+        </details>
+        <details class="faq-item reveal" data-delay="320">
+          <summary>Do you have a mobile app?<span class="plus"></span></summary>
+          <div class="faq-body"><p>Yes — native iOS and Android apps, both with offline support and capture-on-the-go.</p></div>
+        </details>
+        <details class="faq-item reveal" data-delay="400">
+          <summary>Can I cancel anytime?<span class="plus"></span></summary>
+          <div class="faq-body"><p>Absolutely. There are no contracts on Starter or Pro. Cancel from the billing page in two clicks.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta section">
+    <div class="container">
+      <div class="cta-card reveal">
+        <div class="cta-glow"></div>
+        <h2>Ready to ship faster?</h2>
+        <p>Get your team set up in under 5 minutes. Free 14-day trial. No credit card required.</p>
+        <div class="cta-actions">
+          <a href="#" class="btn btn-primary btn-lg">Start free trial <span class="arr">&rarr;</span></a>
+          <a href="#" class="btn btn-ghost btn-lg">Talk to sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="#">
+          <span class="brand-mark">
+            <svg viewBox="0 0 32 32" width="22" height="22"><path d="M6 16 L13 23 L26 9" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="brand-name">TaskGo</span>
+        </a>
+        <p>The fastest way to ship your team's best work.</p>
+        <div class="socials">
+          <a href="#" aria-label="Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 5.8a8.5 8.5 0 0 1-2.4.7 4.2 4.2 0 0 0 1.8-2.3 8.4 8.4 0 0 1-2.7 1A4.2 4.2 0 0 0 12 9.1c0 .3 0 .7.1 1A11.9 11.9 0 0 1 3 4.8a4.2 4.2 0 0 0 1.3 5.6 4.2 4.2 0 0 1-1.9-.5v.1a4.2 4.2 0 0 0 3.4 4.1 4.2 4.2 0 0 1-1.9.1 4.2 4.2 0 0 0 3.9 2.9A8.4 8.4 0 0 1 2 18.7 11.9 11.9 0 0 0 8.5 20.6c7.7 0 12-6.4 12-12v-.5A8.5 8.5 0 0 0 22 5.8z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm0 6h4v10H4V10zm6 0h3.8v1.5h.1c.5-.9 1.8-1.8 3.6-1.8 3.9 0 4.6 2.5 4.6 5.8V20h-4v-4.5c0-1.1 0-2.5-1.6-2.5s-1.8 1.2-1.8 2.4V20h-4V10z"/></svg></a>
+          <a href="#" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.4-3.4-1.4-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.2-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .9-.3 2.8 1a9.7 9.7 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.8-4.6 5 .4.3.7 1 .7 2v3c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h5>Product</h5>
+          <a href="#">Features</a>
+          <a href="#">Integrations</a>
+          <a href="#">Changelog</a>
+          <a href="#">Roadmap</a>
+        </div>
+        <div>
+          <h5>Company</h5>
+          <a href="#">About</a>
+          <a href="#">Customers</a>
+          <a href="#">Careers</a>
+          <a href="#">Contact</a>
+        </div>
+        <div>
+          <h5>Resources</h5>
+          <a href="#">Docs</a>
+          <a href="#">Blog</a>
+          <a href="#">Guides</a>
+          <a href="#">Community</a>
+        </div>
+        <div>
+          <h5>Legal</h5>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Security</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+    <div class="container foot-bot">
+      <small>&copy; 2026 TaskGo, Inc. Demo landing page.</small>
+      <small>Crafted with attention to detail.</small>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
